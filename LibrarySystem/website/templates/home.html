@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbar"
+    >
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbar">
+    <div class="navbar-nav">
+      
+      <a class="nav-item nav-link" id="home" href="/home">home</a>
+      <a class="nav-item nav-link" id="logout" href="/logout">Log Out</a>
+      
+    </div>
+  </div>
+</nav>
+
+
+{% block content %}
+<h1 align="center">This is the Home page</h1>  
+
+
+
+{% endblock %}
